@@ -4,17 +4,19 @@
 #include <iostream>
 #include "tablica.h"
 #include "scalanie.h"
-#define ROZMIAR 42343
+#include "szybkie.h"
+#define ROZMIAR 10
 
 using namespace std;
 
 int main()
 {
 	int* tab = losujTablice<int>(ROZMIAR);
-	//wyswietlTablice(tab, ROZMIAR);
+	wyswietlTablice(tab, ROZMIAR);
 	czyPosortowana(tab, ROZMIAR);
 	cout << endl;
-	sortowaniePrzezScalanie(tab, 0, ROZMIAR - 1, 0);
-	//wyswietlTablice(tab, ROZMIAR);
+	//sortowaniePrzezScalanie(tab, 0, ROZMIAR - 1, 0);
+	sortowanieSzybkie(tab, 0, ROZMIAR - 1, 0);
+	wyswietlTablice(tab, ROZMIAR);
 	czyPosortowana(tab, ROZMIAR);
 }

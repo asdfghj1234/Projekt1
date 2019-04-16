@@ -154,6 +154,7 @@
     <ClCompile Include="projekt1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="szybkie.h" />
     <ClInclude Include="scalanie.h" />
     <ClInclude Include="tablica.h" />
   </ItemGroup>
